@@ -64,5 +64,10 @@ Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log 
 Create an IAM role and attach the previous policy which created.
 
 > Screenshot: 02-IAMRole.png
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/02-IAMRole.png?raw=true)
+
 > Screenshot: 03-IAMRole.png
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/03-IAMRole.png?raw=true)
+
 > Screenshot: 04-IAMRole.png
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/04-IAMRole.png?raw=true)
