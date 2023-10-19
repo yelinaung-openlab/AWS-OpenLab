@@ -9,12 +9,12 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 - [Create an AWS Lambda Function](#Create_an_Lambda_Function)
 - [Add Inline Policy](#Inline_Policy)
 - [Function Code for Lambda](#Function_code_for_lambda)
-- [TestingTime] (#Testing_Lambda_function)
+- [TestingTime] (#Function_code_for_lambda)
 
 ## Setup IAM Policy
 
 Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log events with the following policy.
-> Screenshot: 01-IAMPolicy.jpg
+> Screenshot: 01-IAMPolicy.png
 
 ```bash
 # IAM Policy for RDS and CloudWatch Logs with Json format
@@ -61,3 +61,7 @@ Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log 
 
 ## Setup IAM Roles
 Create an IAM role and attach the previous policy which created.
+
+> Screenshot: 02-IAMRole.png
+> Screenshot: 03-IAMRole.png
+> Screenshot: 04-IAMRole.png
