@@ -15,6 +15,7 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 
 Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log events with the following policy.
 > Screenshot: 01-IAMPolicy.png
+![alt text](http://url/to/img.png)
 
 ```bash
 # IAM Policy for RDS and CloudWatch Logs with Json format
