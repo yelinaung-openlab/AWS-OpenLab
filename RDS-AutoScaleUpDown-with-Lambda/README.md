@@ -13,12 +13,51 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 
 ## Setup IAM Policy
 
-Provide step-by-step instructions on how to install and set up your project. You can include code snippets, dependencies, or other relevant information.
+Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log events with the following policy.
+> Screenshot: 01-IAMPolicy.jpg
 
 ```bash
-# Example installation commands
-$ git clone https://github.com/yourusername/your-project.git
-$ cd your-project
-$ npm install
+# IAM Policy for RDS and CloudWatch Logs with Json format
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1697699911419",
+      "Action": [
+        "rds:DescribeDBInstances",
+        "rds:DescribeValidDBInstanceModifications",
+        "rds:ModifyCurrentDBClusterCapacity",
+        "rds:ModifyCustomDBEngineVersion",
+        "rds:ModifyDBCluster",
+        "rds:ModifyDBClusterEndpoint",
+        "rds:ModifyDBClusterParameterGroup",
+        "rds:ModifyDBClusterSnapshotAttribute",
+        "rds:ModifyDBInstance",
+        "rds:ModifyDBParameterGroup",
+        "rds:ModifyDBProxy",
+        "rds:ModifyDBProxyEndpoint",
+        "rds:ModifyDBProxyTargetGroup",
+        "rds:ModifyDBSnapshot",
+        "rds:ModifyOptionGroup",
+        "rds:ModifyRecommendation"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    },
+    {
+      "Sid": "Stmt1697700010854",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
+```
 
 ## Setup IAM Roles
+Create an IAM role and attach the previous policy which created.
