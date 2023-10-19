@@ -76,6 +76,26 @@ Create an IAM role and attach the previous policy which created.
 
 Will create AWS Lambda function to modify RDS instance class. 
 <br>
-First, have to select "Author from scratch" => Function Name => Runtime(Python 3.7 or 3.8) => Existing Role "RDS_autoscaling_role"
+First, have to select **Author from scratch** => **Function Name** => **Runtime(Python 3.7 or 3.8)** => **Existing Role "RDS_autoscaling_role"**.
 
->Screenshot: 05-Lambda_Function.png
+> Screenshot: 05-LambdaFunction.png
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/05-LambdaFunction.png?raw=true)
+
+> Screenshot: 06-LambdaFunction.png
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/06-LambdaFunction.png?raw=true)
+<br>
+
+## Add Inline Policy
+
+Open a new tab for the IAM role and edit the existing role **RDS_autoscaling_role**. In the summmary page, click on **Add Inline Policy**.
+
+![alt text]
+<br>
+In the Inline policy editor, paste the following **JSON**. 
+<br>
+**NOTE:**
+Need to replace with your existing Lambda Function ARN.
+<br><br>
+Lambda ARN format: <br>
+**arn:aws:lambda:your_aws_region:your_aws_account_id:function:your_lambda_function_name**
+
