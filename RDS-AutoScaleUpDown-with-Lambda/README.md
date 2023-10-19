@@ -9,7 +9,7 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 - [Create an AWS Lambda Function](#Create_an_Lambda_Function)
 - [Add Inline Policy](#Inline_Policy)
 - [Function Code for Lambda](#Function_code_for_lambda)
-- [TestingTime] (#Function_code_for_lambda)
+- [Testing the Lambda Function](#Function_code_for_lambda)
 
 ## Setup IAM Policy
 
@@ -71,3 +71,11 @@ Create an IAM role and attach the previous policy which created.
 
 > Screenshot: 04-IAMRole.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/04-IAMRole.png?raw=true)
+
+## Create an AWS Lambda Function
+
+Will create AWS Lambda function to modify RDS instance class. 
+<br>
+First, have to select "Author from scratch" => Function Name => Runtime(Python 3.7 or 3.8) => Existing Role "RDS_autoscaling_role"
+
+>Screenshot: 05-Lambda_Function.png
