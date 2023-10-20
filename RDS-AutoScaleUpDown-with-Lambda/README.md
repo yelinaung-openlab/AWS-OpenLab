@@ -131,7 +131,7 @@ Scroll down and paste the Python code inside the editor. Need to select the pyth
 
 > Screenshot: 10-LambdaFunctionCode.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/10-LambdaFunctionCode.png?raw=true)
 
 **Python Code**
 <br>
@@ -173,5 +173,5 @@ return json.dumps(dict(error=str(e)))
 
 **Creating Environment Variables:**
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/11-LambdaFunctionCode.png?raw=true)
 
