@@ -203,6 +203,7 @@ In this session, we will add Trigger in Lambda function to run with schedule. We
 
 > Screenshot: 16-Trigger.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/16-Trigger.png?raw=true)
+<br>
 
 **NOTE:** Cron job time is running with UTC timezone. We can't change the timezone. That's why, kindly calculate different time between UTC timezone and your current timezone.
 
