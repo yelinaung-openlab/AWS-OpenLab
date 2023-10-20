@@ -195,9 +195,11 @@ In this session, we will add Trigger in Lambda function to run with schedule. We
 
 > Screenshot: 14-Trigger.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/14-Trigger.png?raw=true)
+<br>
 
 > Screenshot: 15-Trigger.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/15-Trigger.png?raw=true)
+<br>
 
 > Screenshot: 16-Trigger.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/16-Trigger.png?raw=true)
