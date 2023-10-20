@@ -11,7 +11,7 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 - [Function Code for Lambda](#Function_code_for_lambda)
 - [Testing the Lambda Function](#Function_code_for_lambda)
 
-## Setup IAM Policy
+## Setup the required IAM Policy
 
 Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log events with the following policy.
 > Screenshot: 01-IAMPolicy.png
@@ -60,7 +60,7 @@ Firstly, create IAM Policy to gain access to RDS actions and AWS CloudWatch log 
 }
 ```
 
-## Setup IAM Roles
+## Setup the required IAM roles and attach policy
 Create an IAM role and attach the previous policy which created.
 
 > Screenshot: 02-IAMRole.png
@@ -123,4 +123,55 @@ Lambda ARN format: <br>
 > Screenshot: 09-IAMinlinepolicy.png
 
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/09-IAMinlinepolicy.png?raw=true)
+
+
+## Function Code for Lambda
+
+Scroll down and paste the Python code inside the editor. Need to select the python version 3.8.
+
+> Screenshot: 10-LambdaFunctionCode.png
+
+![alt text]
+
+**Python Code**
+<br>
+We are using 2 environment variables:
+- DBinstance
+- DBinstanceClass
+
+```bash
+import sys
+import botocore
+import boto3
+import json
+from botocore.exceptions import ClientError
+def lambda_handler(event, context):
+    rds = boto3.client('rds')
+    lambdaFunc = boto3.client('lambda')
+    print ('Trying to get Environment variable')
+    try:
+        funcResponse = lambdaFunc.get_function_configuration(
+            FunctionName='RDS_Instance_Modification_Function'
+       )
+        DBinstance = funcResponse['Environment']['Variables']['DBInstanceName']
+        DBinstanceClass = funcResponse['Environment']['Variables']['DBinstanceClass']
+        
+        print (f'Starting RDS service for DBInstance : {DBinstance}')
+        print (f'RDS instance class : {DBinstanceClass}')
+     
+        
+        response = rds.modify_db_instance(DBInstanceIdentifier=DBinstance, DBInstanceClass=DBinstanceClass, ApplyImmediately=True)
+        
+        print (f'Success :: {response} ') 
+        return json.dumps(dict(abc=123))
+    except ClientError as e:
+return json.dumps(dict(error=str(e)))
+    
+    return json.dumps(dict(abc=12345))
+```
+<br>
+
+**Creating Environment Variables:**
+
+![alt text]
 
