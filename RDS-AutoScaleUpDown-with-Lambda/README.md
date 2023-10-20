@@ -89,13 +89,34 @@ First, have to select **Author from scratch** => **Function Name** => **Runtime(
 
 Open a new tab for the IAM role and edit the existing role **RDS_autoscaling_role**. In the summmary page, click on **Add Inline Policy**.
 
+> Screenshot: 07-IAMinlinepolicy.png
 ![alt text]
 <br>
 In the Inline policy editor, paste the following **JSON**. 
 <br>
+```bash
+{   
+   "Version": "2012-10-17",
+   "Statement": [
+{
+      "Effect": "Allow",
+      "Action": "lambda:GetFunctionConfiguration",
+      "Resource": "arn:aws:lambda:ap-southeast-1:813444422663:function:RDS_autoscaling_function"
+      }
+   ]
+}
+````
 **NOTE:**
 Need to replace with your existing Lambda Function ARN.
 <br><br>
 Lambda ARN format: <br>
 **arn:aws:lambda:your_aws_region:your_aws_account_id:function:your_lambda_function_name**
+
+<br>
+> Screenshot: 08-IAMinlinepolicy.png
+![alt text]
+
+<br>
+> Screenshot: 09-IAMinlinepolicy.png
+![alt text]
 
