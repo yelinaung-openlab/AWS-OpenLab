@@ -189,4 +189,18 @@ return json.dumps(dict(error=str(e)))
 
 ## Add the trigger for Lambda
 
+In this session, we will add Trigger in Lambda function to run with schedule. We will use AWS EventBridge (CloudWatch Event).
+
+**Reference Link:** https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-cron-expressions.html
+
+> Screenshot: 14-Trigger.png
+
+
+> Screenshot: 15-Trigger.png
+
+> Screenshot: 16-Trigger.png
+
+**NOTE:** Cron job time is running with UTC timezone. We can't change the timezone. That's why, kindly calculate different time between UTC timezone and your current timezone.
+
+
 
