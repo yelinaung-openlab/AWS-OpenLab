@@ -90,7 +90,7 @@ First, have to select **Author from scratch** => **Function Name** => **Runtime(
 Open a new tab for the IAM role and edit the existing role **RDS_autoscaling_role**. In the summmary page, click on **Add Inline Policy**.
 
 > Screenshot: 07-IAMinlinepolicy.png
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/07-IAMinlinepolicy.png?raw=true)
 <br>
 In the Inline policy editor, paste the following **JSON**. 
 <br>
@@ -105,7 +105,7 @@ In the Inline policy editor, paste the following **JSON**.
       }
    ]
 }
-````
+```
 **NOTE:**
 Need to replace with your existing Lambda Function ARN.
 <br><br>
@@ -114,9 +114,9 @@ Lambda ARN format: <br>
 
 <br>
 > Screenshot: 08-IAMinlinepolicy.png
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/08-IAMinlinepolicy.png?raw=true)
 
 <br>
 > Screenshot: 09-IAMinlinepolicy.png
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/09-IAMinlinepolicy.png?raw=true)
 
