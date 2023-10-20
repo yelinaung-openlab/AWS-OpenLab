@@ -183,8 +183,10 @@ return json.dumps(dict(error=str(e)))
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/12-LambdaTesting.png?raw=true)
 <br>
 
-## Add the trigger for Lambda
-
 > Screenshot: 13-LambdaTesting.png
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/13-LambdaTesting.png?raw=true)
 <br>
+
+## Add the trigger for Lambda
+
+
