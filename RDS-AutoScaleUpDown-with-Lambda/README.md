@@ -94,6 +94,7 @@ Open a new tab for the IAM role and edit the existing role **RDS_autoscaling_rol
 <br>
 In the Inline policy editor, paste the following **JSON**. 
 <br>
+
 ```bash
 {   
    "Version": "2012-10-17",
@@ -106,6 +107,7 @@ In the Inline policy editor, paste the following **JSON**.
    ]
 }
 ```
+
 **NOTE:**
 Need to replace with your existing Lambda Function ARN.
 <br><br>
