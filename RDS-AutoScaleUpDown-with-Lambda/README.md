@@ -187,7 +187,7 @@ return json.dumps(dict(error=str(e)))
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/13-LambdaTesting.png?raw=true)
 <br>
 
-## Add the trigger for Lambda
+## Add the trigger for Lambda (#Add_the_trigger_for_lambda)
 
 In this session, we will add Trigger in Lambda function to run with schedule. We will use AWS EventBridge (CloudWatch Event).
 
