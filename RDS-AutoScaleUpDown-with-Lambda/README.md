@@ -114,9 +114,11 @@ Lambda ARN format: <br>
 
 <br>
 > Screenshot: 08-IAMinlinepolicy.png
+
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/08-IAMinlinepolicy.png?raw=true)
 
 <br>
 > Screenshot: 09-IAMinlinepolicy.png
+
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/09-IAMinlinepolicy.png?raw=true)
 
