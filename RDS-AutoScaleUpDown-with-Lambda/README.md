@@ -10,6 +10,7 @@ This guideline is providing how to scale up and down (resizing) RDS instance siz
 - [Add Inline Policy](#Inline_Policy)
 - [Function Code for Lambda](#Function_code_for_lambda)
 - [Testing the Lambda Function](#Function_code_for_lambda)
+- [Add the trigger for Lambda](#Add_the_trigger_for_lambda)
 
 ## Setup the required IAM Policy
 
@@ -174,4 +175,10 @@ return json.dumps(dict(error=str(e)))
 **Creating Environment Variables:**
 
 ![alt text](https://github.com/yelinaung-openlab/AWS-RDS-Aurora-Lab/blob/main/RDS-AutoScaleUpDown-with-Lambda/11-LambdaFunctionCode.png?raw=true)
+<br>
+
+## Testing the Lambda Function
+
+
+## Add the trigger for Lambda
 
