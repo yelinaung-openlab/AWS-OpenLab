@@ -18,15 +18,15 @@ To delete the AWS config, firstly, have to turn off the AWS config recording und
 
 > Screenshot: 01-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/01-awsconfigturnoff.png?raw=true)
 
 > Screenshot: 02-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/02-awsconfigturnoff.png?raw=true)
 
 > Screenshot: 03-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/03-awsconfigturnoff.png?raw=true)
 
 **ADDITIONAL COMMAND**
 
@@ -46,7 +46,7 @@ In the left menu, click the rules and delete all rules.
 
 > Screenshot: 04-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/04-awsconfigturnoff.png?raw=true)
 
 
 ## Use the AWS CLI and delete default recording
@@ -64,11 +64,11 @@ $aws configservice delete-configuration-recorder --configuration-recorder-name d
 ````
 > Screenshot: 05-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/05-awsconfigturnoff.png?raw=true)
 
 > Screenshot: 06-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/06-awsconfigturnoff.png?raw=true)
 
 
 ## Delete the service linked role created for AWS config
@@ -77,4 +77,4 @@ Do not forget to delete the service role that used for AWS config.
 
 > Screenshot: 07-awsconfigturnoff.png
 
-![alt text]
+![alt text](https://github.com/yelinaung-openlab/AWS-OpenLab/blob/main/AWS-Config-Lab/how-to-delete-AWS-Config/07-awsconfigturnoff.png?raw=true)
