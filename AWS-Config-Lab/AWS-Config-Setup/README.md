@@ -1,0 +1,1 @@
+# Setup AWS Config from Management Console
